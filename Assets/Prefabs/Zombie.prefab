@@ -38,8 +38,8 @@ GameObject:
   - component: {fileID: 4257208213796240}
   - component: {fileID: 212853677651234110}
   - component: {fileID: 50799551786090540}
+  - component: {fileID: 114243712472151012}
   - component: {fileID: 114574534348134066}
-  - component: {fileID: 114111740448175186}
   - component: {fileID: 114042753129080452}
   - component: {fileID: 114168205457581628}
   - component: {fileID: 114123273847024572}
@@ -160,44 +160,6 @@ MonoBehaviour:
   prefabToSpawn: {fileID: 1847080353927194, guid: 5fe24ab0edd1da54ca1a9579f505a877,
     type: 2}
   adjustmentAngle: 0
---- !u!114 &114111740448175186
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1622661099266642}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dcc5561ecd053e418fc2f1e1727e654, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onSpawn:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 114152001435584036}
-        m_MethodName: SetTarget
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 114168205457581628}
-        m_MethodName: SetTarget
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: EnemySpawnedEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
 --- !u!114 &114123273847024572
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -279,6 +241,44 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: OnDamagedEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+--- !u!114 &114243712472151012
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1622661099266642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dcc5561ecd053e418fc2f1e1727e654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onSpawn:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114168205457581628}
+        m_MethodName: SetTarget
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114152001435584036}
+        m_MethodName: SetTarget
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: EnemySpawnedEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
 --- !u!114 &114574534348134066
 MonoBehaviour:
