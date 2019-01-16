@@ -38,6 +38,7 @@ GameObject:
   - component: {fileID: 4257208213796240}
   - component: {fileID: 212853677651234110}
   - component: {fileID: 50799551786090540}
+  - component: {fileID: 114320078011571676}
   - component: {fileID: 114243712472151012}
   - component: {fileID: 114574534348134066}
   - component: {fileID: 114042753129080452}
@@ -110,7 +111,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.76, y: 0}
@@ -125,7 +126,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.75, y: 0}
@@ -209,7 +210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be36a916c72297d4f932fa899cfca928, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 50
+  health: 15
   onDie:
     m_PersistentCalls:
       m_Calls:
@@ -280,6 +281,19 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: EnemySpawnedEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+--- !u!114 &114320078011571676
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1622661099266642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8f1e36859a1bc34bbc73c0bec048791, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 5
+  resetTime: 0.25
 --- !u!114 &114574534348134066
 MonoBehaviour:
   m_ObjectHideFlags: 1
