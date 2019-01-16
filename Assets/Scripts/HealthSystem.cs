@@ -25,10 +25,10 @@ public class HealthSystem : MonoBehaviour
     public void TakeStealth(int damage)
     {
         Stealth -= damage;
-        onDamaged.Invoke(health);
-        if (health < 1)
+        onDetect.Invoke(Stealth);
+        if (Stealth < 1)
         {
-            onDie.Invoke();
+            onDectected.Invoke();
         }
     }
 }

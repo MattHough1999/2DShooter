@@ -15,6 +15,7 @@ public class GameUI : MonoBehaviour
     private void OnDisable()
     {
         Player.OnUpdateHealth -= UpdateHealthBar;
+        Player.OnUpdateStealth += UpdateStealthBar;
         AddScore.OnSendScore -= UpdateScore;
     }
     private void UpdateHealthBar(int health)
