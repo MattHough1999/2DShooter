@@ -5,7 +5,8 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public delegate void UpdateHealth(int newHealth);
-    public static event UpdateHealth OnUpdateHealth;
+    public static event UpdateHealth OnUpdateHealth;    public delegate void UpdateStealth(int newStealth);
+    public static event UpdateStealth OnUpdateStealth;
     private Animator gunAnim;
     private void Start()
     {
@@ -27,6 +28,12 @@ public class Player : MonoBehaviour
         if (OnUpdateHealth != null)
         {
             OnUpdateHealth(health);
+        }
+    }    public void SendStealthData(int Stealth)
+    {
+        if (OnUpdateStealth != null)
+        {
+            OnUpdateStealth(Stealth);
         }
     }
 }

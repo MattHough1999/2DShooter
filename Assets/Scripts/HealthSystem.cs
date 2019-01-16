@@ -19,4 +19,16 @@ public class HealthSystem : MonoBehaviour
             onDie.Invoke();
         }
     }
+    public int Stealth = 10;
+    public UnityEvent onDectected;
+    public OnDamagedEvent onDetect;
+    public void TakeStealth(int damage)
+    {
+        Stealth -= damage;
+        onDamaged.Invoke(health);
+        if (health < 1)
+        {
+            onDie.Invoke();
+        }
+    }
 }
