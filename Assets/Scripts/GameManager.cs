@@ -7,6 +7,11 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("Tutorial");
     }
+    public void SkipTut()
+    {
+        SceneManager.LoadScene("LevelOne");
+    }
+
     public void EndGame()
     {
         SceneManager.LoadScene("Game Over");
