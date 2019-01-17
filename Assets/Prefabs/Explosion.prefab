@@ -22,8 +22,8 @@ GameObject:
   - component: {fileID: 212410998165035972}
   - component: {fileID: 95485742927280784}
   - component: {fileID: 114817178171947982}
-  - component: {fileID: 114172684811383852}
   - component: {fileID: 82130459276230944}
+  - component: {fileID: 114243852917760002}
   m_Layer: 0
   m_Name: Explosion
   m_TagString: Untagged
@@ -53,9 +53,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: eb124794041b6084ea29ca23a45362d4, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.057
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -157,7 +157,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114172684811383852
+--- !u!114 &114243852917760002
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -168,8 +168,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79a897a23c19f1c4d8e4c93d0c8c3e7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BloodEffect: {fileID: 0}
-  Music: {fileID: 0}
+  Effect: {fileID: 8300000, guid: eb124794041b6084ea29ca23a45362d4, type: 3}
+  Source: {fileID: 82130459276230944}
 --- !u!114 &114817178171947982
 MonoBehaviour:
   m_ObjectHideFlags: 1
