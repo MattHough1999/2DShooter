@@ -337,7 +337,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1120921713}
         m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:
@@ -5413,6 +5413,12 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 974508907}
+--- !u!114 &1120921713 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114408309456946588, guid: 09f0314725c45e64c82e8931e82241ea,
+    type: 2}
+  m_PrefabInternal: {fileID: 1983610683}
+  m_Script: {fileID: 11500000, guid: 5c9f98310205cbc4b8df81567d433c21, type: 3}
 --- !u!1 &1271891427
 GameObject:
   m_ObjectHideFlags: 0
@@ -5681,6 +5687,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4481356185528676, guid: 09f0314725c45e64c82e8931e82241ea, type: 2}
       propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114789559772726784, guid: 09f0314725c45e64c82e8931e82241ea,
+        type: 2}
+      propertyPath: time
       value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []

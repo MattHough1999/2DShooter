@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4481356185528676}
   - component: {fileID: 114408309456946588}
+  - component: {fileID: 114789559772726784}
   m_Layer: 0
   m_Name: Game System
   m_TagString: Untagged
@@ -51,3 +52,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c9f98310205cbc4b8df81567d433c21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114789559772726784
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1932688997796324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a370b9f0b3368e4a8717762abeea5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 1
+  repeat: 1
+  onTimerComplete:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114408309456946588}
+        m_MethodName: CheckSpawners
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
